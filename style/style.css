@@ -1,0 +1,22 @@
+
+/* TOP NAVBAR STYLE */
+/* Normalizza i link nella pagina */
+a{
+    text-decoration: none;
+    color: black;
+}
+/* Allinea titolo e navbar al centro di header */
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#TopBar{
+    padding-left: 30px;
+    font-size: 22px;
+}
+
+#TopBar a{
+    padding-right: 10px;
+}
