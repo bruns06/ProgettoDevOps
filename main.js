@@ -71,4 +71,5 @@ cards.forEach((card, i) => {
     li.appendChild(type);
     li.appendChild(cardText);
     li.appendChild(flavorText);
+    ul.appendChild(li);
 });
