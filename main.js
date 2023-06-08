@@ -45,6 +45,9 @@ const cards = [
     },
 ];
 
+const showCard = document.getElementById('show-card');
+const ul = document.createElement('ul');
+showCard.appendChild(ul);
 cards.forEach((card, i) => {
     const li = document.createElement('li');
     const name = document.createElement('h2');
@@ -61,7 +64,11 @@ cards.forEach((card, i) => {
     type.textContent = card.type;
     cardText.textContent = card.cardText;
     flavorText.textContent = card.flavorText;
-    li.appendChild(title);
-    li.appendChild(author);
-    ul.appendChild(li);
+    li.appendChild(name);
+    li.appendChild(price);
+    li.appendChild(img);
+    li.appendChild(manaCost);
+    li.appendChild(type);
+    li.appendChild(cardText);
+    li.appendChild(flavorText);
 });
